@@ -55,96 +55,14 @@ Las herramientas de testing se clasifican según el tipo o nivel de pruebas a re
 - Prettier
 - Herramientas de TypeScript (TSLint)
 
-## Pruebas Estáticas
+### Pruebas de UI (Interfaz de Usuario)
 
-Las pruebas estáticas analizan el código sin ejecutarlo y proporcionan un feedback temprano sobre las buenas prácticas de programación.
+Las pruebas de UI, también conocidas como pruebas de interfaz de usuario, se centran en la validación del aspecto visual y la interacción del software con los usuarios. Estas pruebas pueden involucrar la simulación de acciones del usuario, como hacer clic en botones, ingresar texto en campos de entrada, navegar por páginas y verificar que los elementos se muestren correctamente en la interfaz de usuario.
 
-## Assertions (Afirmaciones)
+### Automatización con GitHub Actions
 
-Las afirmaciones permiten verificar el comportamiento del código. Algunos de los assertions más comunes en Jest son:
+GitHub Actions es un servicio de integración continua y automatización de tareas en GitHub. Permite definir flujos de trabajo personalizados que se activan en respuesta a eventos específicos, como la confirmación de cambios en un repositorio. Con GitHub Actions, es posible automatizar la ejecución de pruebas y otros procesos de desarrollo, lo que ayuda a mantener la calidad del código y acelerar el ciclo de entrega.
 
-- expect
-- toBe
-- toEqual
-- toMatch
-- toBeNull
-- toBeUndefined
-- toBeDefined
-- toBeTruthy
-- toBeFalsy
-- toThrow
+En el contexto de las pruebas, se puede utilizar GitHub Actions para ejecutar automáticamente las pruebas unitarias, de integración y de UI cuando se realizan cambios en el repositorio. Esto permite obtener una retroalimentación rápida sobre la calidad del código y detectar posibles problemas de manera temprana.
 
-## Organización de pruebas
-
-Para organizar las pruebas, se pueden utilizar las siguientes funciones:
-
-- describe
-- beforeAll
-- beforeEach
-- afterEach
-- afterAll
-
-## Tipos de Pruebas
-
-### Conceptos
-
-- SUT (System Under Test): Sujeto Bajo Prueba.
-- Validar
-- Verificar
-
-### Metodologías
-
-- TDD (Test Driven Development)
-- BDD (Behavior Driven Development)
-
-## Falsos positivos y falsos negativos
-
-- Falso positivo
-- Falso negativo
-
-## Sistema Legacy y Clean Architecture
-
-- Sistema Legacy
-- Clean Architecture
-
-## AAA en BDD
-
-Cuando se utiliza BDD, se debe utilizar un lenguaje común llamado Gherkin, entendido tanto por el equipo técnico como por el equipo de negocio.
-
-## Definición de unidad
-
-Una unidad puede ser una función o una clase, y su definición depende del contexto en el que se encuentre.
-
-# Cobertura
-
-La cobertura es una medida porcentual que indica cuánto del código que se enviará a producción ha sido probado y cuánto falta por probar. También muestra qué partes del código no se utilizan. Aunque ISO y la FAA exigen un 100% de cobertura, en la realidad esto puede variar. Por ejemplo, probar los setters y getters puede resultar innecesario en algunos casos. Alcanzar el 100% de cobertura no garantiza la ausencia de errores ni que se haya implementado el mejor conjunto de pruebas.
-
-# Doubles en Pruebas de Software
-
-Los "doubles" son objetos o técnicas utilizadas en las pruebas de software para simular comportamientos o datos. Estos "doubles" son herramientas útiles para llenar información ficticia y para simular interacciones con componentes externos, como bases de datos o servicios web.
-
-## Tipos de Doubles
-
-### Dummy
-
-Los "dummies" son datos ficticios que se utilizan para llenar información en las pruebas. Estos datos no tienen un impacto real en el funcionamiento del sistema, pero son necesarios para cumplir con los requisitos de entrada de una prueba.
-
-### Fake
-
-Los "fakes" son objetos que simulan comportamientos o datos de manera simplificada. Estos objetos se utilizan para suplantar componentes reales en las pruebas, proporcionando respuestas predefinidas y controladas. Por ejemplo, se pueden utilizar "fakes" para simular un usuario ficticio en un escenario de prueba.
-
-## Requisitos
-
-- [Faker.js](https://fakerjs.dev/): Biblioteca para generar datos falsos.
-
-## Uso de Fakes de Respuesta (Mocking)
-
-El "mocking" es una técnica que utiliza "fakes de respuesta" para simular el comportamiento de componentes externos durante las pruebas. Estos "fakes de respuesta" se utilizan para evitar dependencias reales y para controlar el flujo de ejecución de las pruebas. Al utilizar "fakes de respuesta", se pueden simular diferentes escenarios y condiciones para verificar el comportamiento del sistema bajo diferentes circunstancias.
-
-## Pruebas end-to-end
-
-Las pruebas end-to-end son un tipo de prueba que evalúa la funcionalidad y el comportamiento de todo el sistema, desde el inicio hasta el final. Estas pruebas simulan el flujo completo de una aplicación, involucrando múltiples componentes y escenarios de uso. Las pruebas end-to-end son útiles para detectar problemas de integración, validar requisitos funcionales y garantizar que el sistema funcione correctamente en su conjunto.
-
-## Referencias
-
-- Faker.js: [https://fakerjs.dev/](https://fakerjs.dev/)
+Es importante tener en cuenta que la configuración específica de GitHub Actions puede variar según las necesidades y el entorno de desarrollo de cada proyecto.
