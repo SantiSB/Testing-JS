@@ -1,30 +1,34 @@
+# Nombre del flujo de trabajo
 name: API CI
-#on: [push]
+
+# Evento que activa el flujo de trabajo
 on:
   push:
     paths:
-      - "./api/**"
-      - ".github/workflows/api-ci.yml"
+      - "./api/**"  # Rutas de archivos que activarán el flujo de trabajo (todos los archivos en la carpeta 'api' y sus subcarpetas)
+      - ".github/workflows/api-ci.yml"  # Archivo que activará el flujo de trabajo ('api-ci.yml' en la carpeta '.github/workflows')
 
+# Configuración por defecto para los trabajos
 defaults:
   run:
-    working-directory: ./api
+    working-directory: ./api  # Directorio de trabajo para los trabajos (carpeta 'api')
 
+# Definición del trabajo 'unit-test'
 jobs:
   unit-test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # El trabajo se ejecuta en una máquina con el sistema operativo Ubuntu más reciente
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2  # Acción para realizar la clonación del repositorio
       - name: Setup Nodejs
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v2  # Acción para configurar la versión de Node.js
         with:
-          node-version: 18
-          cache: 'npm'
-          cache-dependency-path: ./api/package-lock.json
+          node-version: 18  # Versión de Node.js a utilizar
+          cache: 'npm'  # Caché a utilizar (npm)
+          cache-dependency-path: ./api/package-lock.json  # Ruta del archivo de dependencias de caché (package-lock.json en la carpeta 'api')
       - name: install
-        shell: bash
-        run: npm ci
+        shell: bash  # Configuración de la shell a utilizar (bash)
+        run: npm ci  # Comando para instalar las dependencias del proyecto (modo CI)
       - name: run unit test
-        shell: bash
-        run: npm run test
+        shell: bash  # Configuración de la shell a utilizar (bash)
+        run: npm run test  # Comando para ejecutar las pruebas unitarias del proyecto
