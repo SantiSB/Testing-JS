@@ -1,0 +1,7 @@
+// Este es un archivo especifico de jest para decirle como debe correr las pruebas de integración
+{
+  "moduleFileExtensions": ["js"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e.js$"
+}
