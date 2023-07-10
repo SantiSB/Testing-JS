@@ -105,8 +105,9 @@ La pirámide de testing es un modelo conceptual que representa la estructura jer
 Niveles de la pirámide de testing:
   1.	Pruebas unitarias: Se enfocan en verificar el funcionamiento correcto de unidades individuales de código, como funciones, métodos o componentes. Son rápidas, automatizadas y se llevan a cabo por los propios desarrolladores.
   2.	Pruebas de integración: Verifican la interacción y comunicación correcta entre diferentes componentes, módulos o sistemas. Evalúan cómo se combinan y trabajan juntos los distintos elementos que han superado las pruebas unitarias. El objetivo es detectar problemas de interoperabilidad y asegurar que los componentes se integren sin fallos.
+       2.1.	Pruebas end-to-end: Evalúan el flujo completo de la aplicación o sistema, simulando la interacción del usuario desde el inicio hasta el final. Verifican la funcionalidad general del sistema, incluyendo múltiples componentes y sistemas interconectados. Se centran en validar que el software funcione adecuadamente en situaciones reales, abarcando desde la interfaz de usuario hasta la capa de datos.
   3.	Pruebas de interfaz de usuario: Se centran en validar el comportamiento de la interfaz gráfica con la que los usuarios interactúan. Verifican que los elementos de la interfaz funcionen correctamente y sean intuitivos para los usuarios. 
-  4.	Pruebas end-to-end: Evalúan el flujo completo de la aplicación o sistema, simulando la interacción del usuario desde el inicio hasta el final. Verifican la funcionalidad general del sistema, incluyendo múltiples componentes y sistemas interconectados. Se centran en validar que el software funcione adecuadamente en situaciones reales, abarcando desde la interfaz de usuario hasta la capa de datos.
+
 
 ## Pruebas unitarias
 
@@ -178,6 +179,16 @@ Cuando se realiza una prueba de integración, los componentes individuales ya ha
   -	Pruebas de integración de bases de datos: Asegurarse de que las bases de datos se conecten y funcionen correctamente con el software, verificando la inserción, actualización y recuperación de datos.
   -	Pruebas de integración de sistemas: Probar la interacción entre sistemas o componentes de software más grandes, como la integración de un sistema de facturación con un sistema de inventario.
 
+### Pruebas end to end (E2E)
+
+Se centran en verificar el comportamiento y la funcionalidad de un sistema de extremo a extremo, simulando la interacción del usuario con la aplicación en un escenario real. 
+Se realizan para evaluar el flujo completo de un sistema, desde el inicio hasta el final, y asegurarse de que todos los componentes funcionen correctamente juntos.
+Se enfocan en simular acciones y comportamientos del usuario, como hacer clic en botones, llenar formularios, navegar por diferentes páginas y verificar los resultados. 
+Estas pruebas imitan los pasos y acciones que un usuario real llevaría a cabo al interactuar con la aplicación.
+Involucran múltiples capas del sistema, incluyendo la interfaz de usuario, la lógica del negocio y la integración con sistemas externos. 
+Pueden cubrir escenarios complejos y realistas que abarquen múltiples funcionalidades y flujos de trabajo.
+Son útiles para detectar problemas que pueden surgir debido a la integración incorrecta de componentes, problemas de comunicación entre diferentes partes del sistema o errores en el flujo del proceso. 
+
 ### Supertest
 Es una biblioteca de pruebas en JavaScript/Node.js que se utiliza específicamente para realizar pruebas de API. Proporciona una interfaz simple y flexible para realizar solicitudes HTTP y realizar aserciones sobre las respuestas recibidas.
 
@@ -187,16 +198,6 @@ Se centra en validar el aspecto visual y la interacción del software con los us
 Durante las pruebas de UI, se simulan acciones y eventos que un usuario realizaría en la aplicación, como hacer clic en botones, ingresar texto en campos de entrada, seleccionar opciones de menú y navegar por diferentes páginas. 
 Pueden ser realizadas de forma manual, donde un tester realiza las interacciones y verifica los resultados visualmente. 
 También se pueden automatizar utilizando herramientas específicas que simulan las acciones del usuario y realizan comprobaciones automáticas en la interfaz.
-
-## Pruebas end to end (E2E)
-
-Se centran en verificar el comportamiento y la funcionalidad de un sistema de extremo a extremo, simulando la interacción del usuario con la aplicación en un escenario real. 
-Se realizan para evaluar el flujo completo de un sistema, desde el inicio hasta el final, y asegurarse de que todos los componentes funcionen correctamente juntos.
-Se enfocan en simular acciones y comportamientos del usuario, como hacer clic en botones, llenar formularios, navegar por diferentes páginas y verificar los resultados. 
-Estas pruebas imitan los pasos y acciones que un usuario real llevaría a cabo al interactuar con la aplicación.
-Involucran múltiples capas del sistema, incluyendo la interfaz de usuario, la lógica del negocio y la integración con sistemas externos. 
-Pueden cubrir escenarios complejos y realistas que abarquen múltiples funcionalidades y flujos de trabajo.
-Son útiles para detectar problemas que pueden surgir debido a la integración incorrecta de componentes, problemas de comunicación entre diferentes partes del sistema o errores en el flujo del proceso. 
 
 ## Pruebas de rendimiento 
 
