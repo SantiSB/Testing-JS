@@ -1,4 +1,4 @@
-# Apuntes Testing para JavaScript
+# JavaScript Testing
 
 En este documento se presentan algunos apuntes sobre testing con JavaScript.
 
