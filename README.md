@@ -76,6 +76,14 @@ I will review your pull request and might offer feedback or suggestions to enhan
 Once your pull request is approved and any requested changes are addressed, your contribution will be merged into the develop branch. Congratulations, you've successfully contributed to the JavaScript Testing Playground 🎉
 
 ## 👨‍💻 Tech Stack:
+![javascript](https://github.com/SantiSB/javascript-testing/assets/55597241/9fcc692e-abc6-4d1d-a3fa-7f18d098eb90)
+![eslint](https://github.com/SantiSB/javascript-testing/assets/55597241/672d4b0b-48e2-4ec0-9276-0a50cd98d022)
+![jest](https://github.com/SantiSB/javascript-testing/assets/55597241/1eaedce5-b80b-4a04-8244-7c840147c2bf)
+![fakerjs](https://github.com/SantiSB/javascript-testing/assets/55597241/4022870c-50bb-4bce-a9b7-761451c50b53)
+![playwright](https://github.com/SantiSB/javascript-testing/assets/55597241/59e0d639-9366-4ae9-8acf-93c00861e4b4)
+![nodemon](https://github.com/SantiSB/javascript-testing/assets/55597241/f3eccd9c-e7cb-49ea-bd6a-89c09ca1bd37)
+![mongodb](https://github.com/SantiSB/javascript-testing/assets/55597241/7d116379-9d46-42f0-b4b9-f297b31f966b)
+![docker](https://github.com/SantiSB/javascript-testing/assets/55597241/52800af6-3367-488f-baf0-e9982e180163)
 
 | [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 | [ESLint](https://eslint.org/)
